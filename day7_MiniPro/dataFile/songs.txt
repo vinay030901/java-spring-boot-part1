@@ -1,0 +1,4 @@
+album1/singer1/high/soulful
+album1/singer2/med/rock
+album2/singer1/low/soulful
+album2/singer3/med/rock

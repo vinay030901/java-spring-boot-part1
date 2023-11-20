@@ -1,6 +1,8 @@
 package com.studentApp;
 
-public class Student {
+import java.util.Objects;
+
+public class Student implements Comparable<Student>{
 	
 	private int rno;
 	private String name;
@@ -34,6 +36,26 @@ public class Student {
 	public String toString() {
 		return "Student [rno=" + rno + ", name=" + name + ", marks=" + marks + "]";
 	}
-	
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(marks, name, rno);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Student other = (Student) obj;
+		return marks == other.marks && Objects.equals(name, other.name) && rno == other.rno;
+	}
+	@Override
+	public int compareTo(Student o) {
+		return o.getRno() + this.getRno();
+	}
 	
 }

@@ -1,6 +1,7 @@
 package com.DAO;
 
 import java.util.ArrayList;
+import java.util.Optional;
 import java.util.Scanner;
 
 import com.studentApp.Student;
@@ -8,17 +9,16 @@ import com.studentApp.Student;
 public class StudentDAOImpl implements studentDAO {
 
 	@Override
-	public Student searchUser(ArrayList<Student> arr) {
-		// TODO Auto-generated method stub
+	public Optional<Student> searchUser(ArrayList<Student> arr) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the rno of student to search: ");
 		int rno = sc.nextInt();
 		for (Student s : arr) {
 			if (s.getRno() == rno) {
-				return s;
+				return Optional.of(s);
 			}
 		}
-		return null;
+		return Optional.empty();
 	}
 
 	@Override

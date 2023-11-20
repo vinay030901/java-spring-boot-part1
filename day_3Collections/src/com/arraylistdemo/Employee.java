@@ -1,6 +1,6 @@
 package com.arraylistdemo;
 
-public class Employee  {
+public class Employee implements Comparable<Employee> {
 
 	private int empId;
 	private String empName;
@@ -47,11 +47,11 @@ public class Employee  {
 		// TODO Auto-generated constructor stub
 	}
 
-//	@Override
-//	public int compareTo(Employee o) {
-//		// TODO Auto-generated method stub
-////		return o.getEmpId() + this.getEmpId();
+	@Override
+	public int compareTo(Employee o) {
+		// TODO Auto-generated method stub
+		return o.getEmpId() + this.getEmpId();
 //		return this.getEmpName().compareTo(o.getEmpName());
-//	}
+	}
 
 }

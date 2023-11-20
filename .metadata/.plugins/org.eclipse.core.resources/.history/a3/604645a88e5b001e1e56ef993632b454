@@ -1,6 +1,0 @@
-package com.pack;
-
-public class Manager extends Employee{
-	int noOfEmployees;
-	float hra;
-}

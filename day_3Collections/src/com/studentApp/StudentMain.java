@@ -1,6 +1,7 @@
 package com.studentApp;
 
 import java.util.ArrayList;
+import java.util.Optional;
 import java.util.Scanner;
 
 import com.DAO.StudentDAOImpl;
@@ -17,14 +18,24 @@ public class StudentMain {
 		arr.add(new Student(5, "Sumit", 92));
 	}
 
+	public static int sumMarks(ArrayList<Student> arr) {
+		return arr.stream().mapToInt(mark -> mark.getMarks()).sum();
+	}
+
 	public static void main(String[] args) {
 		studentDAO st = new StudentDAOImpl();
 //		st.addStudent(arr);
 //		st.removeStudent(arr);
 //		st.updateStudent(arr);
-		System.out.println(st.searchUser(arr));
-		for (Student s : arr)
-			System.out.println(s);
+		System.out.println(sumMarks(arr));
+		Optional<Student> std = st.searchUser(arr);
+		if (std.isPresent()) {
+			Student s = std.get();
+			System.out.println("User found: " + s.getName());
+		} else
+			System.out.println("User not found");
+//		for (Student s : arr)
+//			System.out.println(s);
 	}
 
 }
