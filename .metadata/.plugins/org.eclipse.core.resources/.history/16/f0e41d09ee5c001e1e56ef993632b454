@@ -1,0 +1,12 @@
+package com.arraylistdemo;
+
+import java.util.ArrayList;
+
+public class EmployeeMain {
+
+	List<Employee> arr=new ArrayList<Employee>();
+	
+	arr.add(new Employee(101,"Vinay","Dehradun"));
+	arr.add
+	
+}

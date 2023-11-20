@@ -1,0 +1,17 @@
+package com.pack;
+
+public class EmployeeMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// emp is reference of the object and (new employee()) is the new object
+		// emp is stored in stack while the object is stored in heap
+		// emp references to the object in the heap
+		Employee emp = new Employee();
+		emp.setEmpId(101);
+		emp.setEmpName("Vinay");
+		emp.setEmpCity("Dehradun");
+		System.out.println(emp.getEmpId() + " " + emp.getEmpName() + " " + emp.getEmpCity());
+	}
+
+}

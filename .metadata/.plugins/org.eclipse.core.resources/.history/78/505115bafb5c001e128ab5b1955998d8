@@ -1,0 +1,31 @@
+package com.studentApp;
+
+import java.util.ArrayList;
+
+public class StudentMain {
+	private static ArrayList<Student> arr = new ArrayList<Student>();
+	static {
+
+		arr.add(new Student(1, "Vinay", 90));
+		arr.add(new Student(2, "Aditya", 80));
+		arr.add(new Student(1, "Abhay", 70));
+		arr.add(new Student(1, "Arun", 60));
+		arr.add(new Student(1, "Sumit", 92));
+	}
+
+	public static void findStudent(String name) {
+		for (Student s : arr) {
+			if (s.getName().equals(name)) {
+				System.out.println("Wow found");
+				return;
+			}
+		}
+		System.out.println("not found");
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		StudentMain.findStudent("Vinay");
+	}
+
+}

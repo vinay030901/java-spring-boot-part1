@@ -1,0 +1,9 @@
+package com.pack;
+
+public class Welcome {
+	
+	public static void main(String args[]) {
+		args[0]="vinay";
+		System.out.println("Welcome to java "+args[0]);
+	}
+}

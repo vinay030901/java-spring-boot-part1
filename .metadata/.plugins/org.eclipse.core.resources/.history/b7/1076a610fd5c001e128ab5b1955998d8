@@ -1,0 +1,13 @@
+package com.DAO;
+
+import com.studentApp.Student;
+
+public interface studentDAO {
+	public Student searchUser(String name);
+
+	public void addStudent(Student s);
+
+	public void removeStudent(String name);
+
+	public void updateStudent(int id, Student s);
+}

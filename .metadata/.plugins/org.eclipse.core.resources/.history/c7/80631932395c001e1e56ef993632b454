@@ -1,0 +1,13 @@
+package com.service;
+
+import com.models.Restaurant;
+
+public class GuestServiceImpl implements GuestService {
+
+	@Override
+	public String orderDining(Restaurant rst) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,21 @@
+package com.psb;
+
+import com.model.Banking;
+import com.template.RBI;
+
+public class PublicSector extends RBI{
+
+	@Override
+	public void withdrawService(Banking bank,int amount) {
+		bank.balance-=amount;
+		System.out.println("new balance is: "+bank.balance);
+		
+	}
+
+	@Override
+	public void showBalance(Banking bank) {
+		
+		
+	}
+
+}

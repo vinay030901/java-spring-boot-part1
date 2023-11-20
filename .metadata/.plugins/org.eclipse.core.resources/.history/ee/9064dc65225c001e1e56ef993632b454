@@ -1,0 +1,15 @@
+package com.main;
+
+import com.model.Banking;
+import com.psb.PublicSector;
+
+public class BankingMain {
+
+	public static void main(String[] args) {
+		PublicSector psb = new PublicSector();
+		Banking bank1 = new Banking(101, 0, "vinay");
+		psb.withdrawService(bank1, 1000);
+		psb.showBalance(bank1);
+	}
+
+}

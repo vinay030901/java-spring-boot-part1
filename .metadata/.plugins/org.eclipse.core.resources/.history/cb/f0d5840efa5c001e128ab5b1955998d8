@@ -1,0 +1,25 @@
+package com.studentApp;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class StudentMain {
+	ArrayList<Student> arr=new ArrayList<Student>();
+	static {
+		
+		arr.add(new Student(1,"Vinay",90));
+		arr.add(new Student(2,"Aditya",80));
+		arr.add(new Student(1,"Abhay",70));
+		arr.add(new Student(1,"Arun",60));
+		arr.add(new Student(1,"Sumit",92));
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the name: ");;
+		String name=sc.nextLine();
+		for(int i=0;i<arr)
+
+	}
+
+}

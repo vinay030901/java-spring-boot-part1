@@ -1,0 +1,11 @@
+package com.template;
+
+import com.model.Banking;
+
+public abstract class RBI {
+	public abstract void withdrawService(Banking  bank);
+	public abstract void showBalance();
+	public void issueCC() {
+		System.out.println("No compulsion");
+	}
+}

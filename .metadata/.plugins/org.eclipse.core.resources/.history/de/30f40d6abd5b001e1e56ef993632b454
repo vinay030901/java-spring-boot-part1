@@ -1,0 +1,18 @@
+package com.pack;
+import java.util.Scanner;
+public class practice {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the string: ");
+		String s1=sc.nextLine();
+		String s2[]=s1.split(" ");
+		for(String s:s2) {
+			char c=s.charAt(0);
+			s.charAt(0)=Character.toUpperCase(s.charAt(0));
+		}
+	}
+
+}

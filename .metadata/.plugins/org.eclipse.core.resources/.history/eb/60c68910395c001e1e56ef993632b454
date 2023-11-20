@@ -1,0 +1,8 @@
+package com.service;
+
+import com.models.Restaurant;
+
+public interface GuestService {
+	Restaurant rst;
+	public String orderDining(	Restaurant rst;);
+}

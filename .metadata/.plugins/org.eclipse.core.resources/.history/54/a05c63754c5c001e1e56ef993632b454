@@ -1,0 +1,18 @@
+package com.exceptions;
+
+public class ExceptionDemo {
+	finally {
+		System.out.println("Program completed.");
+	}
+	public static void main(String[] args) {
+		try {
+			int a = Integer.parseInt(args[0]) / Integer.parseInt(args[1]);
+			System.out.println(a);
+		} catch (ArrayIndexOutOfBoundsException aie) {
+			System.out.println(aie.getMessage());
+		} catch (ArithmeticException e) {
+			System.out.println(e.getMessage());
+		} 
+	}
+
+}

@@ -1,0 +1,21 @@
+package com.arraylistdemo;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
+public class EmployeeMain {
+	public static void main(String[] args) {
+		Collection<Employee> arr = new ArrayList<Employee>();
+
+		arr.add(new Employee(101, "Vinay", "Dehradun"));
+		arr.add(new Employee(102, "Abhay", "Delhi"));
+		arr.add(new Employee(103, "Aditya", "Faridabad"));
+		arr.add(new Employee(104, "Amish", "Barielly"));
+
+		for (Employee e : arr)
+			System.out.println(e);
+
+		System.out.println(arr);
+	}
+}

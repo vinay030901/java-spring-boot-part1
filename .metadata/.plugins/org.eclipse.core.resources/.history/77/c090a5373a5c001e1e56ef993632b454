@@ -1,0 +1,20 @@
+package com.service;
+
+import com.models.Restaurant;
+
+public class GuestServiceImpl implements GuestService {
+
+	private Restaurant restaurant;
+
+	public GuestServiceImpl(Restaurant restaurant) {
+		super();
+		this.restaurant = restaurant;
+	}
+
+	@Override
+	public String orderDining(Restaurant rst) {
+		// TODO Auto-generated method stub
+		return "";
+	}
+
+}

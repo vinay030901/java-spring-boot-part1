@@ -1,0 +1,24 @@
+package com.pack;
+
+public class Manager extends Employee{
+	int noOfEmployees;
+	double hra;
+	public Manager(int noOfEmployees, double d) {
+		super();
+		this.noOfEmployees = noOfEmployees;
+		this.hra = d;
+	}
+	public int getNoOfEmployees() {
+		return noOfEmployees;
+	}
+	public void setNoOfEmployees(int noOfEmployees) {
+		this.noOfEmployees = noOfEmployees;
+	}
+	public double getHra() {
+		return hra;
+	}
+	public void setHra(double hra) {
+		this.hra = hra;
+	}
+	
+}

@@ -1,0 +1,24 @@
+package com.psb;
+
+import com.model.Banking;
+import com.template.RBI;
+
+public class PrivateSectorBank extends RBI {
+
+	@Override
+	public void withdrawService(Banking bank, int amount) {
+		if (amount > 1000) {
+			System.out.println("You can withdraw more than 1000");
+		} else
+			bank.balance -= amount;
+
+	}
+
+	@Override
+	public void showBalance(Banking bank) {
+		// TODO Auto-generated method stub
+		System.out.println("Your  balance is: "+bank.balance);
+
+	}
+
+}

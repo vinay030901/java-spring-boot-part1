@@ -1,0 +1,36 @@
+package com.DAO;
+
+import com.studentApp.Student;
+
+public class StudentDAOImpl implements studentDAO {
+
+	@Override
+	public Student searchUser(int rno) {
+		for (Student s : arr) {
+			if (s.getName().equalsIgnoreCase(name)) {
+				return s;
+			}
+		}
+		return null;
+		return null;
+	}
+
+	@Override
+	public void addStudent(int rno) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void removeStudent(int rno) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void updateStudent(int rno, Student s) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

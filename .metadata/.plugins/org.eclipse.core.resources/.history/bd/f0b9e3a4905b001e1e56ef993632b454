@@ -1,0 +1,6 @@
+package com.pack;
+
+public class Accountant {
+	private boolean salaryProcessDay;
+	private boolean approvalTaken;
+}

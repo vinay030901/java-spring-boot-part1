@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.main.Banking"/>
+    <fullyQualifiedTypeName name="com.psb.PublicSector"/>
+    <fullyQualifiedTypeName name="com.model.Banking"/>
+    <fullyQualifiedTypeName name="com.template.RBI"/>
+    <fullyQualifiedTypeName name="com.psb.PrivateSectorBank"/>
+    <fullyQualifiedTypeName name="com.agents.Agent1"/>
+    <fullyQualifiedTypeName name="com.models.Stocks"/>
+    <fullyQualifiedTypeName name="com.models.Banking"/>
+    <fullyQualifiedTypeName name="com.models.Insurance"/>
+    <fullyQualifiedTypeName name="com.models.Restaurant"/>
+    <fullyQualifiedTypeName name="com.service.GuestServiceImpl"/>
+    <fullyQualifiedTypeName name="com.models.IndianRestaurant"/>
+    <fullyQualifiedTypeName name="com.service.GuestService"/>
+    <fullyQualifiedTypeName name="com.models.Laundary"/>
+    <fullyQualifiedTypeName name="com.models.LaundaryImpl"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+    <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+    <fullyQualifiedTypeName name="app1.SomethingWrongHappen"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+</qualifiedTypeNameHistroy>

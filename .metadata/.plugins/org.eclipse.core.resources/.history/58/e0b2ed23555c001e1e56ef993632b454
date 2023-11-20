@@ -1,0 +1,11 @@
+package app1;
+
+public class EmployeeDAOImpl implements EmployeeDAO {
+
+	@Override
+	public void addEmployee(Employee employee) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

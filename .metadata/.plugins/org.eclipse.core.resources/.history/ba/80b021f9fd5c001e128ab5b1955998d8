@@ -1,0 +1,43 @@
+package com.DAO;
+
+import java.util.ArrayList;
+
+import com.studentApp.Student;
+
+public class StudentDAOImpl implements studentDAO {
+
+	@Override
+	public Student searchUser(int rno, ArrayList<Student> arr) {
+		// TODO Auto-generated method stub
+		for (Student s : arr) {
+			if (s.getRno() == rno) {
+				return s;
+			}
+		}
+		return null;
+	}
+
+	@Override
+	public void addStudent(Student s, ArrayList<Student> arr) {
+		arr.add(s);
+	}
+
+	@Override
+	public void removeStudent(int rno, ArrayList<Student> arr) {
+		// TODO Auto-generated method stub
+		for (Student s : arr)
+			if (s.getRno() == rno) {
+				arr.remove(s);
+				System.out.println("Student removed.");
+			}
+		System.out.println("Student not found.");
+
+	}
+
+	@Override
+	public void updateStudent(int rno, Student s, ArrayList<Student> arr) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

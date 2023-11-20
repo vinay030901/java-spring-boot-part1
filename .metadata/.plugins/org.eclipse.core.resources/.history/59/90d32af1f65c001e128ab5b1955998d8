@@ -1,0 +1,18 @@
+package com.arraylistdemo;
+
+import java.util.Comparator;
+
+public class IDComparator implements Comparator<T> {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+
+	}
+
+	public int compare(Employee o1, Employee o2) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

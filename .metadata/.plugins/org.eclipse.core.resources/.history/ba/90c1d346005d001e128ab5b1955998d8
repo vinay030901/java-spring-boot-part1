@@ -1,0 +1,37 @@
+package com.studentApp;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import com.DAO.StudentDAOImpl;
+
+public class StudentMain {
+	private static ArrayList<Student> arr = new ArrayList<Student>();
+	static {
+
+		arr.add(new Student(1, "Vinay", 90));
+		arr.add(new Student(2, "Aditya", 80));
+		arr.add(new Student(1, "Abhay", 70));
+		arr.add(new Student(1, "Arun", 60));
+		arr.add(new Student(1, "Sumit", 92));
+	}
+
+	public static void main(String[] args) {
+		for (;;) {
+			System.out.println("------------Main Menu-------------");
+			System.out.println("1. Add");
+			System.out.println("2. Remove");
+			System.out.println("3. Update");
+			System.out.println("4. Search");
+
+			System.out.println("\n\n\nPlease choose an option [1, 2, 3, 4]:");
+			Scanner sc = new Scanner(System.in);
+			int option = sc.nextInt();
+			switch (option) {
+			case 1:
+				StudentDAOImpl.add(arr);
+			}
+		}
+	}
+
+}

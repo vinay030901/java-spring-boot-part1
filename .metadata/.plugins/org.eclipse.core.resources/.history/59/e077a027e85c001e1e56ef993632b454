@@ -1,0 +1,8 @@
+package exception;
+
+public class AccountNotFoundException extends Exception {
+	public AccountCreationException(String message) {
+		super(message);
+		// TODO Auto-generated constructor stub
+	}
+}
